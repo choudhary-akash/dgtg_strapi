@@ -18,10 +18,14 @@
       "target": "api::blog.blog",
       "mappedBy": "category"
     },
-    "Name": {
+    "name": {
       "type": "string",
       "required": true,
       "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }
